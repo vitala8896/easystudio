@@ -1,0 +1,1772 @@
+body{
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;  
+}
+header{
+    background: #1c1c1c; 
+}
+.particles{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 77px 120px 235px 128px 100px;
+    text-align: center;
+    grid-template-areas: 
+                 "logo menu phone"
+                 ". line cross"  
+                 "triangle offer ." 
+                 "rectangle btn ellipse" 
+                 ". information ."             
+}
+.fix{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 75px;
+    background: black;
+    opacity: 0.7;
+    width: 100%;
+    z-index: 4;
+}
+.logo{
+    grid-area: logo;
+    position: absolute;
+    top: 15px;
+    left: 14.75vw;
+    z-index: 5;
+}
+.menu{
+    grid-area: menu;
+    position: absolute;
+    top: 0;
+    left: 32vw;
+    text-transform: uppercase;
+    padding-left: 3px;
+    margin: 23px auto 5px;
+    z-index: 5;    
+}
+.menu li{
+    display: block;
+    float: left;
+    padding-right: 43px;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 1.1px;
+}
+.burger{
+    display: none;
+    color: white;
+    position: relative;
+    float: right;
+    top: 40px;
+    right: 25px;
+    z-index: 5;
+    margin: 0 auto;
+}
+.burger_menu ul{
+    padding: 0;
+}
+.burger:hover{
+    cursor: pointer;
+}
+.burger.active{
+    background: url(../img/fon.png);
+    position: absolute;
+    right: 20px;
+    top: 80px;
+    width: 270px;
+    height: 250px;
+    z-index: 5;
+}
+.burger_menu{
+    display: none;   
+}
+.burger_menu li{
+    list-style-type: none; 
+    line-height: 35px;   
+}
+.burger_menu a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.burger_menu.active{
+    display: block;
+    
+}
+.phone{    
+    grid-area: phone;
+    position: absolute;
+    right: 14.5vw;
+    top: 15px;
+    letter-spacing: 2.4px;
+    font-size: 20px;
+    z-index: 5;
+}
+.line{
+    grid-area: line;
+    padding-right: 520px;    
+}
+.cross{
+    grid-area: cross; 
+    padding: 75px 20px 0 0;   
+}
+.triangle{
+    grid-area: triangle;
+    padding: 7px 0 0 20px;  
+}
+.offer{
+    grid-area: offer;
+    position: relative;  
+    z-index: 1;  
+}
+.offer_text{
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 6px;
+    margin: 0 auto;
+    text-transform: uppercase; 
+    position: relative; 
+    z-index: 2; 
+}
+.offer_text2{
+    font-size: 20px; 
+    line-height: 34px;
+    margin: 20px auto 0;
+    position: relative; 
+    z-index: 2; 
+}
+.offer_earth{
+    position: absolute;
+    top: 3px;
+    left: 515px;
+    z-index: 1;
+}
+.rectangle{
+    grid-area: rectangle; 
+    margin: 14px 0 0 105px;
+}
+.btn{
+    grid-area: btn;
+    background-color: #ffde30;
+    border: 1px solid #ffde30;
+    margin: 10px auto 0;
+    text-transform: uppercase;    
+    width: 470px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 35px auto 0;
+    z-index: 3;
+}
+.btn a{
+    text-decoration: none;
+    color: black;
+}
+#information{
+    grid-area: information;
+}
+.ellipse{
+    grid-area: ellipse; 
+    margin: 5px 0 0 50px;
+}
+.grid_sec1{
+    position: relative;
+    display: grid;
+    grid-template-columns: 15px 1fr 15px;
+    grid-template-rows: 95px 70px 65px 130px 205px 138px 95px;
+    grid-template-areas:
+                 "text_landing . ." 
+                 ". . ." 
+                 ". sec1_text1 ."
+                 ". sec1_text2 text_page"
+                 ". sec1_menu ."
+                 ". sec1_text3 ellipse1"
+                 ". . ." 
+}
+.minus{
+   font-size: 30px;
+   font-weight: 900; 
+}
+.sec_minus{
+    position: relative;    
+    z-index: 1; 
+}
+.sec1_minus{    
+    position: absolute;
+    top: 122px;
+    left: -73px;
+}
+.section1{
+    color: black;
+}
+.text1_css{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.6px;
+    z-index: 1;
+    margin: 0;
+}
+.sec1_text1{   
+    grid-area: sec1_text1; 
+    z-index: 2;
+}
+.big_text{
+    font-size: 200px;
+    color: #f8f8f8; 
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 20px; 
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+.text_landing{
+    grid-area: text_landing;
+    position: absolute;
+    top: 50px;
+    left: 5px; 
+}
+.text2_css{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+    z-index: 1;
+    margin: 0;
+}
+.sec1_text2{
+    grid-area: sec1_text2;  
+    z-index: 2;
+}
+.text_page{
+    grid-area: text_page;
+    position: absolute;
+    right: -15px;
+    top: 55px;
+}
+.point{
+    display: none;
+    display: inline-block;
+    margin-right: 8px;
+}
+.sec1_menu{
+   grid-area: sec1_menu;
+   z-index: 2;
+}
+.sec1_ul{
+    padding: 0;
+}
+.sec1_menu li{  
+    display: block;
+    font-size: 18px;
+    line-height: 40px;    
+}
+.text3_css{
+    font-size: 18px;
+    line-height: 32px;
+    z-index: 1;
+    margin: 0;
+}
+.sec1_text3{
+    grid-area: sec1_text3;
+    width: 770px;
+    z-index: 2;
+}
+.ellipse1{
+    grid-area: ellipse1;
+    position: relative;
+    color: red;
+    top: 10px;
+    right: 215px;
+}
+.section2{
+    position: relative;
+    background: url(../img/fon.png);
+    color: white;
+}
+.grid_sec2{    
+    display: grid;
+    grid-template-columns: 15px 410px 25px 410px 1fr 15px;
+    grid-template-rows: 117px 70px 90px 175px 185px 180px 25px;
+    grid-template-areas:
+                 ". . . . . ." 
+                 "sec2_minus sec2_text1 sec2_text1 sec2_text1 sec2_text1 ."
+                 ". sec2_text2 sec2_text2 sec2_text2 sec2_text2 ."
+                 ". sec2_text3 sec2_text3 sec2_text3 figures ."
+                 ". sec2_block1 . sec2_block2 newspap ."
+                 ". sec2_block3 . sec2_block4 newspap ." 
+                 ". . . . . ." 
+}
+.sec2_text1{
+    grid-area: sec2_text1;
+    position: relative;
+}
+.sec2_minus{
+    position: relative;
+    font-size: 30px;
+    font-weight: 900;
+    left: -73px;
+    top: 105px;
+    z-index: 1;
+    margin: 0;
+}
+.sec2_text2{
+    grid-area: sec2_text2;
+}
+.sec2_text3{
+    grid-area: sec2_text3; 
+    width: 770px; 
+    z-index: 2;
+}
+.figures{    
+    grid-area: figures;  
+    position: relative;
+    z-index: 0;
+}
+.trian90{
+    position: absolute;
+    bottom: 15px;
+    left: 100px;
+}
+.rect_smal{
+    position: absolute;
+    right: 44px;
+}
+.dandruff{
+    margin: 5px 0 0 2px;
+}
+.sec2_blocks{
+   position: relative; 
+   z-index: 1;
+}
+.sec2_block1{
+    grid-area: sec2_block1;    
+}
+.block_text1{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    display: inline;
+    position: absolute;
+    left: 65px;
+}
+.block_text2{
+    position: absolute;
+    top: 37px;
+    left: 65px;
+    line-height: 28px;
+    width: 80%;
+}
+.sec2_block2{
+    grid-area: sec2_block2;
+}
+.sec2_block3{
+    grid-area: sec2_block3;
+}
+.sec2_block4{
+    grid-area: sec2_block4;
+}
+.newspap{
+    grid-area: newspap;
+    position: absolute;
+    right: 0;
+    bottom: -220px;
+    z-index: 0;
+}
+.section3{
+    color: black;
+    background-color: #fbfbfb;
+}
+.grid_sec3{
+    position: relative;
+    display: grid;
+    grid-template-columns: 15px 1fr 35px 1fr 35px 1fr 15px;
+    grid-template-rows: 195px 67px 60px 45px 263px 263px 43px;
+    grid-template-areas: 
+                 "sec3_pur . . . . . ."
+                 "sec3_minus sec3_text1 sec3_text1 sec3_text1 sec3_text1 sec3_text1 ."
+                 ". sec3_text2 sec3_text2 sec3_text2 sec3_text2 sec3_text2 ."
+                 ". . . . . . ."
+                 ". sec3_block1 . sec3_block2 . sec3_block3 ."
+                 ". sec3_block4 . sec3_block5 . sec3_block6 ."
+}
+.sec3_minus{
+    grid-area: sec3_minus;
+    position: absolute;
+    bottom: 10px;
+    left: -71px;
+}
+.sec3_text1{
+    grid-area: sec3_text1;
+}
+.sec3_pur{
+    grid-area: sec3_pur;
+    position: absolute;
+    top: 77px;
+    left: 8px;
+}
+.sec3_text2{
+    grid-area: sec3_text2;
+}
+.sec3_blocks{
+    position: relative;
+}
+.sec3_block1{
+    grid-area: sec3_block1;    
+}
+.img_block3{
+    position: absolute;
+    top: 15px;  
+}
+.sec3_block_text1{
+    position: absolute;
+    top: 79px;
+    left: 0;
+}
+.sec3_block_text2{
+    top: 120px;
+    left: 0;
+    width: 97%;
+}
+.sec3_block2{
+    grid-area: sec3_block2;
+}
+.sec3_block3{
+    grid-area: sec3_block3;
+}
+.sec3_block4{
+    grid-area: sec3_block4;
+}
+.sec3_block5{
+    grid-area: sec3_block5;
+}
+.sec3_block6{
+    grid-area: sec3_block6;
+}
+.section4{
+    color: black;
+}
+.grid_sec4{
+    position: relative;
+    display: grid;
+    grid-template-columns: 15px 1fr 30px 1fr 30px 1fr 15px;
+    grid-template-rows: 173px 65px 145px 400px 30px 400px 135px;
+    grid-template-areas: 
+                 "sec4_works . . . . . ."
+                 "sec4_minus sec4_text1 sec4_text1 sec4_text1 sec4_text1 sec4_text1 ."
+                 ". sec4_text2 sec4_text2 sec4_text2 sec4_text2 sec4_text2 ."
+                 ". sec4_block1 . sec4_block2 . sec4_block3 ."
+                 ". . . . . . ."
+                 ". sec4_block4 . sec4_block5 . sec4_block6 ."
+}
+.sec4_minus{
+    grid-area: sec4_minus;
+    position: absolute;
+    left: -71px;
+    bottom: 10px;
+}
+.sec4_text1{
+    grid-area: sec4_text1;
+}
+.sec4_works{
+    grid-area: sec4_works;
+    position: absolute;
+    top: 55px;
+}
+.sec4_text2{
+    grid-area: sec4_text2;
+    z-index: 2;
+}
+.sec4_blocks{
+    margin: 0 auto;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+.sec4_blocks_text1{
+    position: absolute;
+    top: 103px;
+    left: 90px;
+    font-size: 26px;
+    font-weight: bold; 
+    text-transform: uppercase;  
+    letter-spacing: 2.7px;
+}
+.sec4_blocks_text2{
+    position: absolute;
+    top: 158px;
+    line-height: 28px;
+    text-align: center;
+}
+.sec4_block1{
+    grid-area: sec4_block1;
+}
+.sec4_block2{
+    grid-area: sec4_block2;
+}
+.sec4_block3{
+    grid-area: sec4_block3;
+}
+.sec4_block4{
+    grid-area: sec4_block4;
+}
+.sec4_block5{
+    grid-area: sec4_block5;
+}
+.sec4_block6{
+    grid-area: sec4_block6;
+}
+.btn2{
+    position: absolute;
+    top: 220px;
+    left: 60px;    
+    width: 250px;
+}
+.zoom{
+    width: 120%;
+    height: auto;    
+}
+.clear{
+    display: none;
+}
+.section5{
+    background: url(../img/fon_sec5.png) no-repeat center top / cover;
+}
+.grid_sec5{
+    display: grid;
+    position: relative;
+    grid-template-columns: 15px 1fr 15px;
+    grid-auto-rows: 120px 70px 82px 107px 70px 100px; 
+    grid-template-areas: 
+                        ". . ."
+                        ". sec5_text1 ."
+                        ". sec5_text2 ."
+                        ". sec5_text3 ."
+                        ". btn ."
+                        ". . ."
+}
+.sec5_minus{
+    position: absolute;
+    top: 78px;
+    left: -73px;
+}
+.sec5_text1{
+    grid-area: sec5_text1;
+}
+.sec5_text2{
+    grid-area: sec5_text2; 
+}
+.sec5_text3{
+    grid-area: sec5_text3;
+    width: 63%;
+}
+.btn3{
+    margin: 0;
+
+}
+.section6{
+    background-color: #fbfbfb;
+    color: black;
+}
+.grid_sec6{
+    position: relative;
+    display: grid;
+    grid-template-columns: 15px 13fr 28fr 15fr 15fr 20fr 15px; 
+    grid-template-rows: 195px 65px 140px 56px 95px 105px 120px;
+    grid-template-areas: 
+                        ". . . . . ellipse2 ."
+                        ". sec6_text1 sec6_text1 sec6_text1 . cross1 ."
+                        ". sec6_text2 sec6_text2 sec6_text2 sec6_text2 sec6_text2 ."
+                        ". sec6_bl1_tx1 sec6_bl2_tx1 sec6_bl3_tx1 sec6_bl4_tx1 sec6_bl5_tx1 ."
+                        ". sec6_bl1 sec6_bl2 sec6_bl3 sec6_bl4 sec6_bl5 ."
+                        ". sec6_bl1_text1 sec6_bl2_text1 sec6_bl3_text1 sec6_bl4_text1 sec6_bl5_text1 ."
+                        ". sec6_text4 sec6_text4 . . . ."
+}
+.sec6_minus{
+    position: absolute;
+    top: 155px;
+    left: -73px;
+}
+.sec6_stages{
+    position: absolute;
+    top: 80px;
+    left: 5px;
+    z-index: 1;
+}
+.sec6_text1{
+    grid-area: sec6_text1; 
+    position: absolute;
+    z-index: 2;   
+}
+.sec6_text2{
+    grid-area: sec6_text2;
+    position: absolute;
+    z-index: 2;
+}
+.sec6_text3{
+    grid-area: sec6_text3;
+}
+.sec6_text4{
+    grid-area: sec6_text4;
+}
+.ellipse2{
+    grid-area: ellipse2;
+    position: absolute;
+    right: 90px;
+    bottom: 38px;
+    z-index: 1;
+}
+.cross1{
+    grid-area: cross1;
+    position: absolute;
+    right: 58px;
+    bottom: -40px;
+    z-index: 1;
+}
+.sec6_bl1_tx1{
+    grid-area: sec6_bl1_tx1;
+}
+.sec6_bl2_tx1{
+    grid-area: sec6_bl2_tx1;
+}
+.sec6_bl3_tx1{
+    grid-area: sec6_bl3_tx1;
+}
+.sec6_bl4_tx1{
+    grid-area: sec6_bl4_tx1;
+}
+.sec6_bl5_tx1{
+    grid-area: sec6_bl5_tx1;
+}
+.little{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+.bl_css{
+    width: 100%;
+    height: 80px;
+}
+.per_css{
+    margin: 29px auto 0;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+.sec6_bl1{
+    grid-area: sec6_bl1;
+    background: #bfad4b;          
+}
+.sec6_bl2{
+    grid-area: sec6_bl2;
+    background: #eec800;          
+}
+.sec6_bl3{
+    grid-area: sec6_bl3;
+    background: #a68e10;          
+}
+.sec6_bl4{
+    grid-area: sec6_bl4;
+    background: #eccd2b;          
+}
+.sec6_bl5{
+    grid-area: sec6_bl5;
+    background: #dccb72;          
+}
+.text4_css{
+    font-size: 16px; 
+    line-height: 26px;
+    text-align: center;
+}
+.sec6_bl1_text1{
+    grid-area: sec6_bl1_text1;    
+}
+.sec6_bl2_text1{
+    grid-area: sec6_bl2_text1;    
+}
+.sec6_bl3_text1{
+    grid-area: sec6_bl3_text1;    
+}
+.sec6_bl4_text1{
+    grid-area: sec6_bl4_text1;    
+}
+.sec6_bl5_text1{
+    grid-area: sec6_bl5_text1;    
+}
+.sec6_text4{
+    font-size: 14px;
+    width: 450px;
+    line-height: 24px;
+}
+.section7{
+    color: black;
+    
+}
+.grid_sec7{
+    position: relative;
+    display: grid;
+    grid-template-columns: 15px 1fr 30px 1fr 30px 1fr 15px;
+    grid-template-rows: 158px 65px 85px 145px 290px 115px;
+    grid-template-areas: 
+                 "sec7_ben . . . . . ."
+                 "sec7_minus sec7_text1 sec7_text1 sec7_text1 sec7_text1 sec7_text1 ."                 
+                 ". sec7_text2 sec7_text2 sec7_text2 sec7_text2 sec7_text2 ."
+                 ". sec7_text3 sec7_text3 sec7_text3 . . ."
+                 ". sec7_block1 . sec7_block2 . sec7_block3 ."
+                 ". . . . . . ."
+}
+.sec7_text1{
+    grid-area: sec7_text1;   
+}
+.sec7_ben{
+    grid-area: sec7_ben;
+    position: absolute;    
+    top: 45px;
+    left: 3px;
+}
+.sec7_minus{
+    grid-area: sec7_minus;
+    position: absolute;
+    top: -40px;
+    left: -71px;
+}
+.sec7_text2{
+    grid-area: sec7_text2; 
+
+}
+.sec7_text3{
+    grid-area: sec7_text3; 
+}
+.sec7_blocks {
+    text-align: center;  
+    width: 370px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);  
+}
+.sec7_block2{
+    grid-area: sec7_block2;
+    margin: 0 auto;
+}
+.sec7_imgs{
+    display: block;
+    margin: 40px 0 20px 0;
+}
+.sec7_bl1_txs1{
+    position: static;
+}
+.text5_css{
+    font-size: 14px;
+    line-height: 25px;
+    width: 80%;
+    margin: 0 auto;
+}
+.sec7_bl1_txs2{
+    width: 95%;
+    margin: 15px auto 0;
+}
+.sec7_block3{
+    grid-area: sec7_block3;
+}
+.sec7_block1{
+    grid-area: sec7_block1;
+}
+.section8{
+    color: black;
+}
+.grid_sec8{
+    position: relative;
+    display: grid;
+    grid-template-columns: 15px 1fr 1fr 1fr 1fr 15px;
+    grid-template-rows: 122px 65px 120px 132px 45px;
+    grid-template-areas: 
+                 ". . . sec8_img1 sec8_img2 ."
+                 ". sec8_text1 sec8_text1 sec8_text1 sec8_text1 ."                 
+                 ". sec8_text2 sec8_text2 sec8_text2 sec8_text2 ."
+                 "prev sec8_block1 sec8_block2 sec8_block3 sec8_block4 next"
+                 ". . sec8_img3 sec8_img4 . ."
+}
+.prev{
+    grid-area: prev;
+    font-size: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    cursor: pointer;
+}
+.next{
+    grid-area: next;
+    font-size: 80px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    cursor: pointer;
+}
+.sec8_text1{
+    grid-area: sec8_text1;
+}
+.sec8_minus{
+    position: absolute;
+    top: 86px;
+    left: -74px;
+}
+.sec8_text2{
+    grid-area: sec8_text2;
+}
+.sec8_block1{
+    grid-area: sec8_block1;
+}
+.sec8_block2{
+    grid-area: sec8_block2;
+}
+.sec8_block3{
+    grid-area: sec8_block3;
+}
+.sec8_block4{
+    grid-area: sec8_block4;
+}
+.sec8_text2{
+    margin: 0;
+}
+.sec8_blocks{
+    margin: 0 auto;
+    padding-right: 5px;
+}
+.sec8_block1{
+    padding-top: 15px;
+}
+.sec8_block2{
+    padding: 10px 10px 0 0;
+}
+.sec8_block3{
+    padding-right: 20px;
+}
+.sec8_block4{
+    padding: 10px 28px 0 0;
+}
+.sec8_img1{
+    grid-area: sec8_img1;
+    position: absolute;
+    right: 97px;
+    bottom: -12px;
+    z-index: 1;
+}
+.sec8_img2{
+    grid-area: sec8_img2;
+    position: absolute;
+    right: 70px;
+    bottom: 2px;
+    z-index: 1;
+}
+.sec8_img3{
+    grid-area: sec8_img3;
+    position: absolute;
+    right: 5px; 
+}
+.sec8_img4{
+    grid-area: sec8_img4;
+    position: absolute;
+    left: 5px; 
+}
+.section9{
+    background: url(../img/fon_sec9.png) no-repeat center top / cover;
+    color: white;
+}
+.grid_sec9{
+    display: grid;
+    position: relative;
+    grid-template-columns: 15px 1fr 15px;
+    grid-auto-rows: 120px 70px 82px 107px 100px 70px; 
+    grid-template-areas:
+                        ". . ." 
+                        ". sec9_text1 ."
+                        ". sec9_text2 ."
+                        ". sec9_text3 ."
+                        ". btn ."
+                        ". information ."
+}
+.sec9_text1{
+    grid-area: sec9_text1;
+}
+.sec9_text2{
+    grid-area: sec9_text2;
+}
+.sec9_text3{
+    grid-area: sec9_text3;
+    width: 65%;
+}
+.btn9{
+    margin: 0;
+}
+footer{
+    position: relative;
+    background: #1c1c1c;
+    z-index: 1;
+    overflow: hidden;
+}
+.grid_footer{
+    position: relative;
+    display: grid;
+    grid-template-columns: 15px 1fr 2fr 2fr 2fr 15px;
+    grid-template-rows: 151px;
+    grid-template-areas: 
+                 ". logo_footer address phone_footer contacts ."
+}
+.logo_footer{
+    grid-area: logo_footer;
+    position: absolute;
+    top: 47px;
+    left: 3px;
+    z-index: 2;
+}
+.address{
+    grid-area: address;
+    position: relative;
+}
+.map_img{
+    position: absolute;
+    top: 53px;
+    left: 35px;
+}
+.address_text{
+    position: absolute;
+    top: 28px;
+    left: 69px;
+    line-height: 35px;
+    letter-spacing: 1px;
+}
+.phone_footer{
+    grid-area: phone_footer;
+    position: relative;
+    margin: 0;
+}
+.phone_img{
+    position: absolute;
+    top: 53px;
+    left: 75px;
+}
+.phone_num{    
+    position: absolute;
+    top: 27px;
+    left: 112px;
+    font-size: 17px;
+    line-height: 35px;
+    letter-spacing: 0.5px;
+}
+.contacts{
+    grid-area: contacts;
+    position: relative;
+}
+.mail_img{
+    position: absolute;
+    top: 55px;
+    left: 55px;
+}
+.mail_text{
+    position: absolute;
+    top: 34px;
+    left: 90px;
+    font-size: 18px;
+}
+.facebook_img{
+    position: absolute;
+    right: 30px;
+    bottom: 48px;
+}
+.instagram_img{
+    position: absolute;
+    right: 2px;
+    bottom: 48px;
+}
+@media screen and (max-width: 1420px){
+    .newspap{
+        overflow: hidden;
+    }
+    .menu{ 
+        top: -10px;       
+        left: 24vw;        
+    }
+}
+@media screen and (max-width: 1350px){  
+    .phone{    
+        right: 12vw;
+    }  
+  .sec_minus{
+      display: none;
+  }
+  .sec2_minus{
+    display: none;
+  }  
+  .sec3_minus{
+    display: none;
+  }
+  .sec4_minus{
+    display: none;
+  }
+  .sec5_minus{
+    display: none;
+  }
+  .sec6_minus{
+    display: none;
+  }
+  .sec7_minus{
+    display: none;
+  }
+  .sec8_minus{
+    display: none;
+  }
+  .sec9_minus{
+    display: none;
+  }
+  .text_page{
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 1200px){
+  .phone{    
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 20px 5px 0 0;
+  }
+  .big_text{
+    font-size: 150px;
+    letter-spacing: 10px;     
+  }
+  .grid_sec1{
+    grid-template-columns: 15px 1fr 15px;
+    grid-template-rows: 80px 65px 130px 205px 138px 80px;
+    grid-template-areas:
+                 "text_landing . ." 
+                 ". sec1_text1 ."
+                 ". sec1_text2 text_page"
+                 ". sec1_menu ."
+                 ". sec1_text3 ellipse1"
+                 ". . ." 
+    }
+  .sec1_text1{
+    top: 70px;
+  }
+  .text_landing{
+     top: 0;
+     margin: 0;
+     padding: 0;
+  }  
+  .grid_sec2{    
+    grid-template-columns: 15px 410px 25px 410px 1fr 15px;
+    grid-template-rows: 80px 70px 90px 175px 185px 180px 80px;
+    grid-template-areas:
+                 ". . . . . ." 
+                 "sec2_minus sec2_text1 sec2_text1 sec2_text1 sec2_text1 ."
+                 ". sec2_text2 sec2_text2 sec2_text2 sec2_text2 ."
+                 ". sec2_text3 sec2_text3 sec2_text3 figures ."
+                 ". sec2_block1 . sec2_block2 newspap ."
+                 ". sec2_block3 . sec2_block4 newspap ." 
+                 ". . . . . ." 
+}
+  
+  .grid_sec3{
+    grid-template-columns: 15px 1fr 25px 1fr 25px 1fr 15px;
+    grid-template-rows: 80px 67px 60px 45px 263px 263px 80px;
+    grid-template-areas: 
+                 "sec3_pur . . . . . ."
+                 "sec3_minus sec3_text1 sec3_text1 sec3_text1 sec3_text1 sec3_text1 ."
+                 ". sec3_text2 sec3_text2 sec3_text2 sec3_text2 sec3_text2 ."
+                 ". . . . . . ."
+                 ". sec3_block1 . sec3_block2 . sec3_block3 ."
+                 ". sec3_block4 . sec3_block5 . sec3_block6 ."
+    }
+  .sec4_blocks{
+      width: auto;
+  }
+  .grid_sec4{
+    display: grid;
+    grid-template-columns: 15px 1fr 1fr 15px;
+    grid-template-rows: 80px 67px 115px 430px 430px 430px 80px;
+    grid-template-areas: 
+                 ". . . ."
+                 ". sec4_text1 sec4_text1 ."
+                 ". sec4_text2 sec4_text2 ."
+                 ". sec4_block2 sec4_block1 ."
+                 ". sec4_block3 sec4_block4 ."
+                 ". sec4_block5 sec4_block6 ."
+                 ". . . ."
+    }
+    .sec4_text1{
+        position: relative;
+        top: 15px;
+    }
+    .grid_sec6{
+        grid-template-columns: 15px 13fr 28fr 15fr 15fr 20fr 15px; 
+        grid-template-rows: 100px 65px 100px 56px 95px 80px 50px 100px;
+        grid-template-areas: 
+                            ". . . . . ellipse2 ."
+                            ". sec6_text1 sec6_text1 sec6_text1 . cross1 ."
+                            ". sec6_text2 sec6_text2 sec6_text2 sec6_text2 sec6_text2 ."
+                            ". sec6_bl1_tx1 sec6_bl2_tx1 sec6_bl3_tx1 sec6_bl4_tx1 sec6_bl5_tx1 ."
+                            ". sec6_bl1 sec6_bl2 sec6_bl3 sec6_bl4 sec6_bl5 ."
+                            ". sec6_bl1_text1 sec6_bl2_text1 sec6_bl3_text1 sec6_bl4_text1 sec6_bl5_text1 ."
+                            ". sec6_text4 sec6_text4 . . . ."
+                            ". . . . . . ."
+    }
+    .grid_sec7{
+        position: relative;
+        display: grid;
+        grid-template-columns: 15px 1fr 1fr 15px;
+        grid-template-rows: 80px 80px 65px 100px 250px 250px 250px 80px;
+        grid-column-gap: 0;        
+        grid-template-areas: 
+                     ". . . ."
+                     ". sec7_text1 sec7_text1 ."                 
+                     ". sec7_text2 sec7_text2 ."
+                     ". sec7_text3 sec7_text3 ."
+                     ". sec7_block1 . ."
+                     ". . sec7_block2 ."
+                     ". sec7_block3 . ."
+                     ". . . ."
+    }   
+    .sec7_blocks{
+        margin: 0 auto;
+    } 
+    .sec7_block1{
+        padding-left: 0;
+    }
+    .grid_sec8{
+        grid-template-columns: 15px 1fr 1fr 1fr 1fr 15px;
+        grid-template-rows: 80px 65px 120px 132px 80px;
+        grid-template-areas: 
+                     ". . . sec8_img1 sec8_img2 ."
+                     ". sec8_text1 sec8_text1 sec8_text1 sec8_text1 ."                 
+                     ". sec8_text2 sec8_text2 sec8_text2 sec8_text2 ."
+                     "prev sec8_block1 sec8_block2 sec8_block3 sec8_block4 next"
+                     ". . sec8_img3 sec8_img4 . ."
+    }
+    .grid_sec9{
+        grid-template-columns: 15px 1fr 15px;
+        grid-auto-rows: 80px 70px 82px 107px 70px 80px; 
+        grid-template-areas:
+                            ". . ." 
+                            ". sec9_text1 ."
+                            ". sec9_text2 ."
+                            ". sec9_text3 ."
+                            ". btn ."
+                            ". information ."
+    }
+    .grid_footer{
+        grid-template-columns: 15px 1fr 2fr 2fr 2fr 15px;
+        grid-template-rows: 50px 100px;
+        grid-template-areas: 
+                     ". ."
+                     ". logo_footer address phone_footer contacts ."
+    }
+    .phone_num{
+        width: auto;
+    }
+    .text_adapt{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .wrapper{
+        grid-template-columns: 1fr 600px 1fr;
+        grid-template-rows: 77px 120px 235px 228px;
+        text-align: center;
+        grid-template-areas: 
+                     "logo menu phone"
+                     ". line cross"  
+                     "triangle offer ." 
+                     "rectangle btn ellipse"              
+    }
+  .phone{
+    margin: 20px 5px 0 0;
+  }   
+  .ellipse{
+    margin: 0;
+  } 
+  .offer_earth{        
+    left: 450px;
+  }
+  .grid_sec1{
+    grid-template-rows: 160px 83px 200px;
+  }
+  .text2_css{
+    font-size: 40px;
+    letter-spacing: 3px;
+    top: -50px;
+  }
+  .sec2_text2{
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+  .grid_sec3{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 270px 60px 263px 263px 263px;
+    grid-template-areas: 
+                 "sec3_text1 sec3_text1"
+                 "sec3_text2 sec3_text2"
+                 "sec3_block1 sec3_block2"
+                 "sec3_block3 sec3_block4"
+                 "sec3_block5 sec3_block6"
+  }
+  .sec3_text1{
+      margin: 0;
+  }
+  .sec4_text2{
+    top: 25px;
+  }
+}
+@media screen and (max-width: 992px){   
+    .menu li{
+        padding-right: 15px;
+    } 
+    .offer_text{
+        font-size: 40px;         
+    }
+    .offer_text2{
+        font-size: 16px; 
+        line-height: 20px;
+        margin: 20px auto 0;
+    }
+    .offer_earth{        
+      left: 350px;
+    }    
+    .wrapper{
+        grid-template-columns: 1fr 550px 1fr;             
+    }
+    .figures{
+        display: none;
+    }
+    .sec2_block1{
+        position: relative;
+        margin: 0;
+        width: auto;
+        z-index: 2;
+    }
+    .sec2_block2{
+        position: relative;
+        left: 0;
+        width: auto;
+        z-index: 2;
+    }
+    .sec2_block3{
+        position: relative;
+        margin: 0;
+        width: auto;
+        z-index: 2;
+    }
+    .sec2_block4{
+        position: relative;
+        left: 0;
+        width: auto;
+        z-index: 2;
+    }
+    .sec2_text1{
+        margin: 30px 0 0 15px;
+    }
+    .sec2_text2{
+        margin: 20px 0 0 15px;
+        font-size: 20px;
+    }
+    .sec2_text3{
+        width: auto;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .block_text2{
+        width: 400px;
+    }
+    .newspap{
+        position: relative;
+        z-index: 1;
+        overflow: visible;
+    }
+    .newspap_pos{
+        position: absolute;
+        top: 0;
+        left: -150px;
+        z-index: 2;
+    }
+    .grid_sec2{
+        display: grid;
+        grid-template-columns: 1frx 1fr 1fr;
+        grid-template-rows: 70px 60px 110px 150px 150px 150px 150px;
+        grid-template-areas: 
+                     "sec2_text1 sec2_text1 sec2_text1"
+                     "sec2_text2 sec2_text2 sec2_text2"
+                     "sec2_text3 sec2_text3 ."
+                     "sec2_block1 sec2_block1 newspap "
+                     "sec2_block2 sec2_block2 newspap" 
+                     "sec2_block3 sec2_block3 newspap "
+                     "sec2_block4 sec2_block4 newspap "
+    }
+    .sec7_ben{
+        font-size: 130px;
+    }
+    .sec3_block_text2{
+        padding-right: 0;
+        width: auto;
+    }
+    .sec8_imgs_all{
+        width: 100%;
+        height: auto;
+    }
+    .sec8_text2{
+        font-size: 20px;
+    }
+    .grid_sec8{
+        grid-template-rows: 80px 60px 80px 100px 25px;
+    }
+    .address{
+        left: -3px;
+    }
+    .phone_footer{
+        left: -50px;
+    }
+    .contacts{
+        left: -60px;
+    }
+}
+@media screen and (max-width: 850px){
+    .wrapper{
+        grid-template-columns: 1fr 450px 1fr;
+        grid-template-areas: 
+                     "logo phone burger"
+                     ". line cross"  
+                     "triangle offer ." 
+                     "rectangle btn ellipse"              
+    }
+    .phone{
+        letter-spacing: 2.4px;
+        font-size: 20px;
+        margin: 0 5px 0 0;
+    }
+    .menu{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .offer_earth{        
+        left: 100px;
+    }
+    .btn{
+        text-transform: uppercase;    
+        width: 270px;
+        height: 60px;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        margin: 35px auto 0;
+    }
+    .big_text{
+        font-size: 100px;
+        letter-spacing: 8px;     
+     }
+     .sec1_text1{
+        top: 40px;
+    }
+    .text_landing{
+         top: 0;
+         margin: 0;
+         padding: 0;
+    } 
+    .grid_sec1{
+        grid-template-rows: 110px 80px 200px;
+    }
+    .sec1_text2{
+        font-size: 30px;
+        letter-spacing: 1px;
+        top: -25px;
+    }
+    .sec1_text3{
+        width: auto;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .ellipse1{
+        float: right;
+        margin: 0 100px 0 0;
+    }
+    .figures{
+        display: none;
+    }
+    .sec2_text3{
+        width: auto;
+        font-size: 14px;
+        line-height: 20px;
+    } 
+    .grid_sec3{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 80px 100px 263px 263px 263px;
+        grid-template-areas: 
+                     "sec3_text1 sec3_text1"
+                     "sec3_text2 sec3_text2"
+                     "sec3_block1 sec3_block2"
+                     "sec3_block3 sec3_block4"
+                     "sec3_block5 sec3_block6"
+      }    
+    .sec3_text1{
+        top: 60px
+    }
+    .sec3_text2{
+        top: 50px
+    }
+    .btn3{
+        width: 70%;
+    }
+    .sec5_text1{
+        top: 20px;
+    }
+    .sec5_text2{
+        top: 20px;
+    }
+    .grid_sec5{
+        grid-template-columns: 1fr;
+        grid-auto-rows: 50px 82px 127px 170px; 
+        grid-template-areas: 
+                            "sec5_text1"
+                            "sec5_text2"
+                            "sec5_text3"
+                            "btn"
+    }    
+    .sec7_block1{
+        padding: 0;
+    }
+    .sec7_block3{
+        padding: 0;
+    }
+    .grid_sec9{
+        grid-template-columns: 15px 1fr 15px;
+        grid-auto-rows: 50px 82px 127px 170px; 
+        grid-template-areas: 
+                            ". sec9_text1 ."
+                            ". sec9_text2 ."
+                            ". sec9_text3 ."
+                            ". btn ."
+    } 
+    .sec9_text1{
+        position: absolute;
+        top: 15px;        
+    }
+    .sec9_text3{
+        width: auto;       
+    }
+    .grid_footer{
+        grid-template-columns: 15px 2fr 2fr 2fr 15px;
+        grid-template-areas: 
+                     ". address phone_footer contacts ."
+    }
+    .logo_footer{
+        display: none;
+    }
+}
+@media screen and (max-width: 768px){
+    .wrapper{
+        grid-template-columns: 150px 1fr;
+        grid-template-rows: 77px 50px 235px 150px;  
+        grid-template-areas: 
+                     "logo phone"
+                     "line cross"  
+                     "offer offer" 
+                     "btn btn"             
+    }
+    .grid_sec1{
+        grid-template-rows: 110px 70px 90px;
+    }
+    .triangle{
+        display: none;
+    }
+    .ellipse{
+        display: none;
+    }
+    .rectangle{
+        display: none;
+    }
+    .line{
+        padding-right: 20px;    
+    }
+    .cross{
+        padding: 0;
+        float: right; 
+    }
+    
+    .big_text{
+        font-size: 50px;
+        letter-spacing: 6px;     
+     }
+    .sec1_text2{
+        font-size: 15px;
+        letter-spacing: 1px;
+        top: -5px;
+    }    
+    .text_page{
+        top: 60px;
+    }
+    .sec1_menu{
+        top: -40px;
+    }
+    .sec1_menu li{  
+        font-size: 16px;
+        line-height: 20px; 
+    }
+    .sec2_text1{
+        margin: 20px 0 0 15px;
+    }
+    .sec2_text2{
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    .block_text2{
+        width: 350px;
+    }
+    .grid_sec2{
+        grid-template-rows: 70px 60px 110px 150px 150px 150px 150px;
+        grid-template-areas: 
+                     "sec2_text1 sec2_text1 sec2_text1"
+                     "sec2_text2 sec2_text2 sec2_text2"
+                     "sec2_text3 sec2_text3 sec2_text3"
+                     "sec2_block1 sec2_block1 newspap "
+                     "sec2_block2 sec2_block2 newspap" 
+                     "sec2_block3 sec2_block3 newspap "
+                     "sec2_block4 sec2_block4 newspap "
+    }
+    .sec3_block_text2{
+        width: 90%;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .grid_sec3{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 120px 60px 200px 200px 200px 200px 200px 200px;
+        grid-template-areas: 
+                     "sec3_text1 sec3_text1"
+                     "sec3_text2 sec3_text2"
+                     "sec3_block1 sec3_block1"
+                     "sec3_block2 sec3_block2"
+                     "sec3_block3 sec3_block3"
+                     "sec3_block4 sec3_block4"
+                     "sec3_block5 sec3_block5"
+                     "sec3_block6 sec3_block6"
+    }
+    .sec3_text2{
+          font-size: 20px;
+    }
+    .sec4_text2{
+        font-size: 20px;
+        top: 60px;
+    }
+    .section4{
+        overflow: hidden;
+    }
+    .grid_sec4{
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 75px 420px 420px 420px 420px 420px 420px;
+        grid-template-areas: 
+                     "sec4_text1"
+                     "sec4_text2"
+                     "sec4_block2"
+                     "sec4_block1"
+                     "sec4_block3"
+                     "sec4_block4"
+                     "sec4_block5"
+                     "sec4_block6"
+    }
+    .sec5_text2{
+        font-size: 20px;
+    }
+    .sec5_text3{
+        width: 90%;
+    }
+    .sec6_text2{
+        font-size: 20px;
+    }
+    .ellipse2{
+        bottom: 0;
+    }
+    .sec6_text2{
+        top: 15px;
+    }
+    .sec6_text4{
+        padding-top: 15px;
+        width: auto;
+        line-height: normal;
+    }
+    .grid_sec6{
+        grid-template-columns: 15px 13fr 28fr 15fr 15fr 20fr 15px; 
+        grid-template-rows: 55px 65px 65px 79px 79px 79px 79px 79px 120px;
+        grid-template-areas: 
+                            ". . . . . ellipse2 ."
+                            ". sec6_text1 sec6_text1 sec6_text1 . cross1 ."
+                            ". sec6_text2 sec6_text2 sec6_text2 sec6_text2 sec6_text2 ."
+                            ". sec6_bl1_tx1 sec6_bl1 sec6_bl1_text1 sec6_bl1_text1 sec6_bl1_text1 ."
+                            ". sec6_bl2_tx1 sec6_bl2 sec6_bl2_text1 sec6_bl2_text1 sec6_bl2_text1 ."
+                            ". sec6_bl3_tx1 sec6_bl3 sec6_bl3_text1 sec6_bl3_text1 sec6_bl3_text1 ."
+                            ". sec6_bl4_tx1 sec6_bl4 sec6_bl4_text1 sec6_bl4_text1 sec6_bl4_text1 ."
+                            ". sec6_bl5_tx1 sec6_bl5 sec6_bl5_text1 sec6_bl5_text1 sec6_bl5_text1 ."
+                            ". sec6_text4 sec6_text4 sec6_text4 sec6_text4 sec6_text4 ."
+    }
+    .grid_sec7{
+        grid-template-columns: 15px 1fr 15px;
+        grid-template-rows: 50px 80px 65px 180px 270px 270px 270px;
+        grid-template-areas: 
+                     ". . ."
+                     ". sec7_text1 ."                 
+                     ". sec7_text2 ."
+                     ". sec7_text3 ."
+                     ". sec7_block1 ."
+                     ". sec7_block2 ."
+                     ". sec7_block3 ."
+    }
+    .sec7_text2{
+        font-size: 20px;
+    }
+    .sec7_text3{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .sec7_block1{
+        padding-top: 45px;
+    }
+    .sec7_block3{
+        padding-top: 45px;
+    }
+    .sec8_blocks{
+        padding-right: 0;
+        width: auto;
+    }
+    .sec9_text2{
+        font-size: 20px;
+    }
+    .grid_footer{
+        grid-template-columns: 15px 2fr 2fr 15px;
+        grid-template-areas: 
+                     ". address phone_footer ."
+    }
+    .contacts{
+        display: none;
+    }
+}
+@media screen and (max-width: 540px){    
+    
+}
+@media screen and (max-width: 425px){
+    .logo{
+        left: 5vw;
+    }
+    .wrapper{
+        grid-template-rows: 77px 100px 235px 130px;                       
+    }
+    .grid_sec1{
+        grid-template-rows: 110px 70px 70px 160px;
+    }
+    .phone{
+        letter-spacing: 1px;
+        font-size: 18px;
+    }
+    .offer_text{
+        font-size: 30px;
+        letter-spacing: 1px;        
+    }
+    .offer_text2{
+        padding: 0 10px;       
+    }
+    .offer_earth{        
+        left: 50px;
+    }
+    .sec1_menu li{  
+        font-size: 14px;
+        line-height: 15px;    
+    }
+    .sec1_text3{
+        top: -3px;
+    }
+    .sec2_text1{
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    .block_text2{
+        width: 90%;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .grid_sec2{
+        grid-template-rows: 70px 60px 130px 150px 150px 150px 150px;
+    }
+    .zoom{
+        width: 90%;
+        height: auto;
+    }
+    .sec4_block2{
+        display: none;
+    }
+    .clear{
+        display: block;
+    }
+    .sec5_text3{
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .sec7_blocks{
+        width: auto;
+        padding-top: 20px;
+    }
+    .sec8_block1{
+        padding: 0;
+        width: 70%;
+    }
+    .sec8_block4{
+        padding: 0;
+    }
+    .sec9_text1{
+        font-size: 12px;
+        line-height: 18px;       
+    }
+    .sec9_text3{
+        font-size: 16px;
+        line-height: 20px;       
+    }
+    .grid_footer{
+        grid-template-columns: 15px 2fr 15px;
+        grid-template-rows: 100px 100px;
+        grid-template-areas: 
+                     ". address ."
+                     ". phone_footer ."
+    }
+    .address{
+        text-align: center;
+    }
+    .map_img{
+        position: absolute;
+        top: 5px;
+        left: 45px;
+    }
+    .phone_num{
+        position: absolute;
+        top: 5px;
+        left: 175px;
+    }
+    .phone_img{
+        position: absolute;
+        top: 45px;
+        left: 93px;
+    }
+}

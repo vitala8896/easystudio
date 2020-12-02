@@ -1,0 +1,255 @@
+body{
+    font-family: Montserrat, sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+div{
+    box-sizing: border-box;
+}
+.profile2{
+    color: black;
+}
+header{
+    background: url(../img/fon.png) no-repeat center top / cover;
+}
+.container{
+    max-width: 1200px;
+}
+.center{
+    display: block;
+    margin: 0 auto;
+}
+.logo{
+    margin-top: 22px;
+}
+.menu{
+    padding: 0;
+    margin: 0;
+    margin-top: 42px;
+    display: block;
+}
+.menu li{
+    float: left;
+    display: block;
+    padding-left: 45px;
+    letter-spacing: 1px;
+}
+.menu li:nth-child(1){
+    padding-left: 0px;
+}
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.phone{
+    font-size: 20px;
+    letter-spacing: 2.4px;
+    margin-top: 39px;
+    float: right;
+}
+.line{
+    padding-left: 20px;
+}
+.cross{
+    margin-top: 80px;
+    margin-left: 35px;
+}
+.triangle{
+    float: right;
+    margin-top: 10px;
+    padding-right: 5px;
+}
+.earth{
+    float: right;
+    padding-top: 3px;
+    padding-right: 10px;
+    z-index: 1;
+}
+.offer{
+    font-size: 60px;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    font-weight: 900;
+    letter-spacing: 6.5px;
+}
+.offer2{
+    font-size: 19px;
+    margin-top: 25px;
+    letter-spacing: 0.75px;
+    line-height: 1.7em;
+}
+.offers{
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+}
+.rectangle{
+    float: right;
+    position: absolute;
+    top: 20px;
+    left: 150px;
+}
+.btn{
+    width: 470px;
+    height: 60px;
+    background: #ffde30;
+    font-size: 16px;
+    letter-spacing: 1.25px;
+    font-weight: bold;
+    border-radius: 0;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 135px;
+}
+.btnCen{
+    text-align: center;
+}
+.ellipse{
+    padding: 10px 0 0 50px;
+}
+.bigFont{
+    font-size: 200px;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    font-weight: 900;
+    color: #f8f8f8;
+}
+.landing{
+    margin: 23px 0 -100px 10px;
+    position: absolute;
+    top: 0px;
+    left: -7px;
+    z-index: 0;
+}
+.minus_b{
+    background: black;
+    height: 5px;
+    width: 30px;
+    margin-right: 100px;
+    position: absolute;
+    top: 173px;
+    left: -173px;
+    z-index: 1;
+}
+.minus_w{
+    background: white;
+}
+.sec2_lp{
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: 164px;
+    left: -85px;
+    letter-spacing: 1.6px;
+    z-index: 1;
+}
+.sec2_kn{
+    position: absolute;
+    top: 232px;
+    left: 15px;
+    font-weight: 600;
+    letter-spacing: 5.2px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+.list{
+    margin: 387px 0 0;
+    letter-spacing: 1.15px;
+}
+.point{
+    float: left;
+    padding-top: 5px;
+    margin-right: 13px;
+}
+.page{
+    margin: 260px 0 0;
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+.sec__text{
+
+}
+.text_pos{
+    margin: 40px 0 0;
+}
+@media screen and (max-width: 1200px){
+    .logo{
+        width: 9.2vw;
+    }
+    .phone{
+        font-size: 1.7vw;
+    }
+    .line{
+        width: 15vw;
+    }
+    .cross{
+        width: 3.4vw;
+        margin-top: 6.5vw;
+    }
+    .triangle{
+        height: 6vw;
+    }
+    .offer{
+        font-size: 5vw;
+    }
+    .offer2{
+        font-size: 1.6vw;
+    }
+    .earth{
+        height: 19vw;
+    }
+    .rectangle{
+        height: 4vw;
+    }
+    .ellipse{
+        height: 7vw;
+    }
+    .btn{
+        margin-bottom: 11.5vw;
+        font-size: 1.3vw;
+        height: 5vw;
+    }
+}
+@media screen and (max-width: 1140px){
+    .menu li{
+        padding-left: 28px;
+    }
+    .menu li{
+        padding-left: 8px;
+    }
+}
+@media screen and (max-width: 992px){
+    .rectangle{
+        position: static;
+    }
+    .btn{
+        width: auto;
+    }
+    .ellipse{
+        padding-left: 0px;
+    }
+}
+@media screen and (max-width: 880px){
+
+}
+@media screen and (max-width: 576px){
+    .menu{
+        display: none;
+    }
+    .logo{
+        display: inline;
+    }
+    .phone{
+        display: inline;
+    }
+    .cross{
+        margin: 0px;
+    }
+}
